@@ -16,3 +16,5 @@ dependencies {
     compile "org.telegram:telegrambots:5.0.1"
     compile "org.telegram:telegrambotsextensions:5.0.1"
 }
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
